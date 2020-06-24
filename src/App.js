@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
       let data2 = await response.json()
       setTodo(data2);
       setFetching(false);
-      console.log( "DAtA = ", todo);
+      console.log( "Data = ", todo);
     }
     fetchData();
   },[isData]);
